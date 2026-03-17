@@ -1,0 +1,142 @@
+:root {
+  --primary: #1c4360;
+  --primary-hover: #15537a;
+  --light: #f4f4f4;
+  --border: #ddd;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light);
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo { height: 50px; }
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.top-bar h1 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+button {
+  color: #fff;
+  background: var(--primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.top-bar button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  
+}
+
+button:hover { background: var(--primary-hover); }
+
+#openModal { margin: 20px auto; }
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,.5);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: var(--primary);
+  text-align: center;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0 5px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover { color: #000; }
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid var(--border);
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background: var(--light);
+  color: var(--primary);
+}
+
+table tbody tr:nth-child(even) { background: #f9f9f9; }
+
+td:last-child,
+th:last-child {
+  width: 1%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+td button {
+  padding: 5px 8px;
+  margin: 0 2px;
+  font-size: 0.9rem;
+}

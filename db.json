@@ -1,0 +1,12 @@
+{
+  "patients": [
+    {
+      "id": "758b",
+      "name": "Luiz Gustavo Santos da Silva",
+      "cpf": "053.248.695-11",
+      "exam": "Sangue ",
+      "status": "Pendente"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
